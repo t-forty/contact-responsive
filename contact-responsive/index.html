@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Form - Responsive</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <form
+      action=""
+      target="_self"
+      method="POST"
+      autocomplete="on"
+      name="contact-form"
+      class="wrapper"
+    >
+      <p>Your Name</p>
+      <!-- Name -->
+      <label for="fname" class="sr-only">FN</label>
+      <input
+        type="text"
+        name="fname"
+        id="fname"
+        placeholder="First Name"
+        required
+      />
+      <label for="lname" class="sr-only">LN</label>
+      <input
+        type="text"
+        name="lname"
+        id="lname"
+        placeholder="Lirst Name"
+        required
+      />
+      <!--  emial -->
+      <label for="email">Your Email</label>
+      <input type="email" name="email" id="email" />
+
+      <!-- phone -->
+      <label for="phone">Phone</label>
+      <input type="tel" name="phone" id="phone" />
+
+      <!-- Msg -->
+      <label for="msg-subj">Message Subject</label>
+      <input type="datalist" name="msg-subj" id="msg-subj" />
+      <label for="text-area">Message</label>
+      <input type="texarea" name="text-area" id="text-area" />
+      <!-- robot-->
+      <p class="turing">are you human</p>
+      <div class="lverify">
+        <label class="lverify" for="robot">Other</label>
+        <input type="radio" id="robot" name="Verification" />
+      </div>
+      <div class="rverify">
+        <label class="rverify" for="human">Human</label>
+        <input type="radio" name="Verification" id="human" />
+      </div>
+      <!-- submit -->
+      <input type="submit" id="submit" />
+    </form>
+    <script src="scripts.js"></script>
+  </body>
+</html>
